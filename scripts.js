@@ -1,7 +1,6 @@
 // 1. Configuración Segura de Supabase (usa .env en producción)
-const supabaseUrl = 'https://jjihjvegheguvmradmau.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpqaWhqdmVnaGVndXZtcmFkbWF1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUwODU5MzEsImV4cCI6MjA3MDY2MTkzMX0._wkRKxSbsEaHXXYhQMYSIgLBOLfeLAZbH0E9Tx4W7Tk';
-
+const supabaseUrl = '';
+const supabaseKey = ''
 // Inicializar Supabase
 const supabase = window.supabase ? window.supabase.createClient(supabaseUrl, supabaseKey) : null;
 
@@ -180,8 +179,8 @@ function inicializarSelectores() {
 
 // 7. Función para enviar notificación a Telegram (sin cambios)
 async function enviarNotificacionTelegram(citaData) {
-  const BOT_TOKEN = "8473537897:AAE4DhBRqFSgkerepYMSA-meEBwn0pXjXag";
-  const CHAT_ID = "8330674980";
+  const BOT_TOKEN = "";
+  const CHAT_ID = "";
   
   try {
     const mensaje = `📌 *Nueva cita agendada*:\n
@@ -308,4 +307,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
 });
